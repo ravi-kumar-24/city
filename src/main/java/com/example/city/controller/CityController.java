@@ -28,7 +28,7 @@ public class CityController {
 
     @RequestMapping(value = "/c/{cityName}", method = RequestMethod.GET)
     public String getCity( @PathVariable(value = "cityName") String cityName){
-        String url ="http://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=ba2e26157dd2d87c9ac4ff1a959d8e8c";
+        String url ="http://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=aaa";
         System.out.println(url);
         String str =getRestTemplate()
                 .getForObject(url, String.class);
